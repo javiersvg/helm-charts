@@ -1,0 +1,10 @@
+{{- if .Values.setup }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: setup-config
+data:
+{{- with .Values.setup }}
+{{ toYaml . | indent 2 }}
+{{- end }}
+{{- end }}

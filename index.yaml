@@ -3,17 +3,30 @@ entries:
   java-amc:
   - apiVersion: v2
     appVersion: "2.20"
-    created: "2021-05-18T16:35:01.651094-07:00"
+    created: "2021-12-09T12:59:19.210053-03:00"
     description: A Helm chart for Containerized Advanced Management Console
     digest: 76a04c5832bb718e1dd1f91762cd484033821f21646861b771e323735101eb5b
     name: java-amc
     urls:
     - charts/java-amc-1.0.0.tgz
     version: 1.0.0
+  oracle-db:
+  - apiVersion: v1
+    created: "2021-12-09T12:59:19.216583-03:00"
+    description: Oracle Database Server
+    digest: 59e47e94a586b447760b6d3b5d4dada071d370ea0d63a4dedd19b7a04d705a84
+    home: http://www.oracle.com
+    keywords:
+    - oracle
+    - database
+    name: oracle-db
+    urls:
+    - charts/oracle-db-1.0.0.tgz
+    version: 1.0.0
   soa-suite:
   - apiVersion: v2
     appVersion: 12.2.1.4
-    created: "2021-05-18T16:35:01.65304-07:00"
+    created: "2021-12-09T12:59:19.22097-03:00"
     dependencies:
     - condition: oracledb.provision
       name: oracledb
@@ -26,4 +39,4 @@ entries:
     urls:
     - charts/soa-suite-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-18T16:35:01.649818-07:00"
+generated: "2021-12-09T12:59:19.20708-03:00"
